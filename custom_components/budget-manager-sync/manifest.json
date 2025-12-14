@@ -2,9 +2,10 @@
   "domain": "budget_manager",
   "name": "Budget Manager",
   "version": "1.4.1",
-  "documentation": "https://example.invalid/budget_manager",
+  "documentation": "https://github.com/qlerup/budget-manager-sync",
+  "issue_tracker": "https://github.com/qlerup/budget-manager-sync/issues",
   "requirements": [],
-  "codeowners": [],
+  "codeowners": ["@qlerup"],
   "iot_class": "local_push",
   "config_flow": true,
   "integration_type": "hub"
