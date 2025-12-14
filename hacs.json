@@ -1,4 +1,6 @@
 {
   "name": "Budget Manager Sync",
   "render_readme": true
+  "zip_release": true,
+  "filename": "budget-manager-sync.zip"
 }
