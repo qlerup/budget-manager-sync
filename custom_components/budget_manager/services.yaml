@@ -1,0 +1,159 @@
+add_item:
+  name: Add item
+  description: Add a budget item.
+  fields:
+    name:
+      name: Name
+      description: Item name.
+      required: true
+      selector:
+        text:
+    amount:
+      name: Amount
+      description: Amount for the item.
+      required: true
+      selector:
+        number:
+          mode: box
+          min: 0
+    frequency:
+      name: Frequency
+      description: How often the item repeats.
+      required: false
+      default: monthly
+      selector:
+        select:
+          options:
+            - monthly
+            - quarterly
+            - yearly
+    payer:
+      name: Payer
+      description: Who pays (participant name, or Begge/Alle).
+      required: false
+      default: Begge
+      selector:
+        text:
+
+update_item:
+  name: Update item
+  description: Update a budget item by id.
+  fields:
+    id:
+      name: ID
+      description: Item id.
+      required: true
+      selector:
+        text:
+    name:
+      name: Name
+      description: New item name.
+      required: false
+      selector:
+        text:
+    amount:
+      name: Amount
+      description: New amount.
+      required: false
+      selector:
+        number:
+          mode: box
+          min: 0
+    frequency:
+      name: Frequency
+      description: New frequency.
+      required: false
+      selector:
+        select:
+          options:
+            - monthly
+            - quarterly
+            - yearly
+    payer:
+      name: Payer
+      description: New payer.
+      required: false
+      selector:
+        text:
+
+update_item_by_name:
+  name: Update item by name
+  description: Update all items matching a name (case-insensitive).
+  fields:
+    name:
+      name: Name
+      description: Existing item name to match.
+      required: true
+      selector:
+        text:
+    new_name:
+      name: New name
+      description: New item name.
+      required: false
+      selector:
+        text:
+    amount:
+      name: Amount
+      description: New amount.
+      required: false
+      selector:
+        number:
+          mode: box
+          min: 0
+    frequency:
+      name: Frequency
+      description: New frequency.
+      required: false
+      selector:
+        select:
+          options:
+            - monthly
+            - quarterly
+            - yearly
+    payer:
+      name: Payer
+      description: New payer.
+      required: false
+      selector:
+        text:
+
+remove_item:
+  name: Remove item
+  description: Remove a budget item by id.
+  fields:
+    id:
+      name: ID
+      description: Item id.
+      required: true
+      selector:
+        text:
+
+remove_item_by_name:
+  name: Remove item by name
+  description: Remove all items matching a name (case-insensitive).
+  fields:
+    name:
+      name: Name
+      description: Item name to match.
+      required: true
+      selector:
+        text:
+
+clear:
+  name: Clear items
+  description: Remove all budget items.
+
+rebuild_entities:
+  name: Rebuild entities
+  description: Force the sensor platform to reconcile entities with current items.
+
+set_participants:
+  name: Set participants
+  description: Set the list of participant names (minimum 1).
+  fields:
+    names:
+      name: Names
+      description: List of participant names (do not include Begge/Alle).
+      required: true
+      selector:
+        object:
