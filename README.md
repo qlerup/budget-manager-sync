@@ -1,13 +1,15 @@
 # 💰📊 Budget Manager Sync – README 🔄🏠
 
-<img width="336" height="282" alt="image" src="https://github.com/user-attachments/assets/c8316146-ae0a-44e9-b857-da698b0c10c6" />
+<img width="321" height="275" alt="image" src="https://github.com/user-attachments/assets/288b8449-4c37-426d-acc1-3d0a9270c0f3" />
 
 
-## ⚠️ Prerequisite: install the Lovelace card too 🧩🖼️
+## ⚠️ Prerequisite: install the card first 🧩🖼️
 
-This integration is designed to work together with the **Budget Manager Card** (the frontend UI). Install the card as well:
+This integration requires the **Budget Manager Card** (the Lovelace UI) to be installed and working:
 
 https://github.com/qlerup/budget-manager-card
+
+> The integration exposes a **sensor** (e.g. `sensor.budget_overview`) with budget data in attributes, and a service domain `budget_manager`. The card reads the sensor and calls the services to add/update/remove items and participants. 🔌🧠
 
 ---
 
