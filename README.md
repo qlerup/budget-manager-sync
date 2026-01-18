@@ -1,5 +1,8 @@
 # 💰📊 Budget Manager Sync – README 🔄🏠
 
+[![Downloads](https://img.shields.io/github/downloads/qlerup/budget-manager-sync/total)](https://github.com/qlerup/budget-manager-sync/releases)
+
+
 <img width="321" height="275" alt="image" src="https://github.com/user-attachments/assets/288b8449-4c37-426d-acc1-3d0a9270c0f3" />
 
 ## Support this project
